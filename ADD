@@ -1,0 +1,152 @@
+//switch case
+
+
+void main(){
+String day="saturday";
+  switch(day){
+    case "sunday":
+    print("sunday");
+    break;
+    case "monday":
+    print("monday");
+    break;
+    case "tuesday":
+    print("tuesday");
+    break;
+    case "wednesday":
+    print("wednesday");
+    break;
+    case "thursday":
+    print("thursday");
+    break;
+    case "friday":
+    print("friday");
+    break;
+    case "saturday":
+    print("saturday");
+    break;
+    default:
+    print("no such day");
+  }
+ 
+  }
+
+//while dart
+
+void main()   
+{  
+    int i = 1;  
+    while (i <= 5)  
+    {  
+        print( "hello world");  
+          i++;
+    }  
+}  
+
+//ifelse dart
+
+void main(){
+int a=25;
+int b=20;
+if(a<b){
+  print("a is greater than b");
+}else{
+  print("hello world");
+}
+}
+
+//class dart
+
+class Addition{
+  void add(int a, int b){
+    print("Addition of two number is ${a+b}");
+  }
+}
+void main(){
+  Addition a=new Addition();
+  a.add(20,26);
+}
+
+//for loop dart
+
+void main() {  
+    //for loop iteration   
+    for(int i = 1; i <=10;i++)  
+    {  
+        print(i);  
+}  
+}  
+
+//while.js
+
+let i=1;
+while(i<=5){
+    console.log("hello world");
+    i++;
+}
+
+//forloop.js
+
+let i;
+let sum=0;
+for(i=0;i<=10;i++){
+    sum=sum+i;
+}
+console.log(sum);
+
+//ifelse.js
+let a=25
+if(a<=25){
+    console.log("hello world")
+}else{
+    console.log("No hello world")
+}
+
+
+mongodb installation
+
+Download MongoDB:
+Visit the MongoDB website: https://www.mongodb.com/try/download/community
+Click on "Download" under the Community Server tab.
+Select the Version:
+Choose the version of MongoDB suitable for your Windows system. Typically, you'll want the Windows 64-bit version.
+Start the Installer:
+Once the download is complete, locate the downloaded file (usually in your Downloads folder) and double-click on it to start the installation process.
+Choose Setup Type:
+In the setup wizard, you can choose either the "Complete" or "Custom" setup type. The "Complete" setup includes all MongoDB tools and features, while the "Custom" setup allows you to customize the installation directory and components. Choose as per your preference and click "Next".
+Install MongoDB Compass (Optional):
+You'll be prompted to install MongoDB Compass, a GUI tool for managing MongoDB databases. You can choose to install it or skip this step by unchecking the box. Click "Next" to continue.
+Install MongoDB as a Service:
+Optionally, you can choose to install MongoDB as a Windows service, which allows MongoDB to start automatically when your computer starts. Check the box if you want to install MongoDB as a service.
+Choose Installation Directory:
+Specify the directory where you want MongoDB to be installed. The default directory is usually fine for most users.
+Begin Installation:
+Click on the "Install" button to begin the installation process. MongoDB will be installed to the specified directory on your Windows system.
+Complete Installation:
+Once the installation is complete, you'll see a confirmation message. You can choose to launch MongoDB Compass or click "Finish" to complete the installation.
+Verify Installation:
+To verify that MongoDB is installed correctly, open Command Prompt (or PowerShell) and type mongo --version. If MongoDB is installed properly, you'll see the version number displayed.
+
+
+//database
+
+
+const mongoose=require("mongoose");
+mongoose.set("strictQuery",true);
+mongoose.connect("mongodb://localhost:27017/SYCS")
+.then(()=>console.log("Connnected to database"))
+.catch((err)=>console.error("Connection error:",err));
+const studentSchema=mongoose.Schema({
+    name: String,
+    age: Number,
+    class: String,
+    rollno: Number,
+    email: String
+},{collection:"students"});
+module.exports={
+    Student: mongoose.model("student",studentSchema),
+};
+
+
+
+
