@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.semester-box {
+    background-color: #81c784;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.semester-box h2 {
+    margin-top: 0;
+}
+
+.semester-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.semester-box ul li {
+    margin: 5px 0;
+}
+
+.semester-box ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.semester-box ul li a:hover {
+    color: #fff;
+}
